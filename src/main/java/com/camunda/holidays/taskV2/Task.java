@@ -1,5 +1,6 @@
-package com.camunda.sadaform;
+package com.camunda.holidays.taskV2;
 
+@Deprecated
 public record Task(
     String id,
     String name,

@@ -1,4 +1,4 @@
-package com.camunda.sadaform;
+package com.camunda.holidays;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

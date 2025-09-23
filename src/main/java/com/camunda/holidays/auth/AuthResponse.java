@@ -1,8 +1,8 @@
-package com.camunda.sadaform;
+package com.camunda.holidays.auth;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public record TokenResponse (
+public record AuthResponse(
         @JsonProperty("access_token")
         String accessToken,
         @JsonProperty("token_type")

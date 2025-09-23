@@ -1,4 +1,4 @@
-package com.camunda.sadaform;
+package com.camunda.holidays;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

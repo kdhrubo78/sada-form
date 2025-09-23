@@ -1,25 +1,25 @@
-package com.camunda.sadaform;
+package com.camunda.holidays;
 
+import com.camunda.holidays.taskV2.search.SearchUserTaskClient;
 import io.camunda.zeebe.client.ZeebeClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
 
 import java.util.Date;
 import java.util.Map;
 
-@Component
+//@Component
 public class CreateProcessInstanceCommandLineRunner implements CommandLineRunner {
 
     private static Logger logger = LoggerFactory.getLogger(CreateProcessInstanceCommandLineRunner.class);
 
     private ZeebeClient zeebeClient;
-    private TaskListService taskListService;
+    private SearchUserTaskClient searchUserTaskClient;
 
-    public CreateProcessInstanceCommandLineRunner(ZeebeClient zeebeClient, TaskListService taskListService) {
+    public CreateProcessInstanceCommandLineRunner(ZeebeClient zeebeClient, SearchUserTaskClient searchUserTaskClient) {
         this.zeebeClient = zeebeClient;
-        this.taskListService = taskListService;
+        this.searchUserTaskClient = searchUserTaskClient;
     }
 
     @Override

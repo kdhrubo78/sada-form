@@ -20,8 +20,8 @@
     <div class="card">
         <div class="card-header bg-light d-flex justify-content-between align-items-center">
             <h5 class="mb-0">Leave Application Queue</h5>
-            <a href="/apply" class="btn btn-primary">
-                <i class="fas fa-calendar-plus me-2"></i>Apply for Leave
+            <a href="/initiate" class="btn btn-primary">
+                <i class="fas fa-calendar-plus me-2"></i>Initiate Leave Process
             </a>
         </div>
         <div class="card-body">
@@ -46,10 +46,10 @@
                         <!--
                         <td><span class="badge bg-danger">High</span></td>
                         -->
-                        <td><span class="badge bg-warning text-dark" th:text="${t.taskState}">In Progress</span></td>
-                        <td th:text="${t.formKey()}">Mar 10, 2025</td>
+                        <td><span class="badge bg-warning text-dark" th:text="${t.state}">In Progress</span></td>
+                        <td th:text="${t.externalFormReference}">Mar 10, 2025</td>
                         <td>
-                            <a th:href="@{/review(id=${t.id()}, formKey=${t.formKey})}"
+                            <a th:href="@{/show(id=${t.userTaskKey}, externalFormReference=${t.externalFormReference})}"
 
                                     class="btn btn-sm btn-info" >
                                 <i class="fas fa-eye me-1"></i>Review

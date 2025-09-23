@@ -2,13 +2,18 @@ camunda:
   client:
     mode: saas
     auth:
-      client-id: NHP.YVEmeXEOX1zJ9sTSP9qmzME07NTy
-      client-secret: l16iYd1ZI7J4b9SIPmxa-ec4pWGL.B99_h4h3S-fGhJHIClP9oh1szH4H~q_7WyE
-    cluster-id: 946a6bb0-5120-4b28-9b45-29b6afa6c7c9
-    region: bru-2
+      client-id: ${C8_CLIENT_ID}
+      client-secret: ${C8_CLIENT_SECRET}
+    cloud:
+      cluster-id: ${C8_CLUSTER_ID}
+      region: ${C8_CLUSTER_REGION}
 
 
 zeebe:
   auth-server: https://login.cloud.camunda.io/oauth/token
-  client-id: NHP.YVEmeXEOX1zJ9sTSP9qmzME07NTy
-  client-secret: l16iYd1ZI7J4b9SIPmxa-ec4pWGL.B99_h4h3S-fGhJHIClP9oh1szH4H~q_7WyE
+  client-id: ${C8_CLIENT_ID}
+  client-secret: ${C8_CLIENT_SECRET}
+
+
+cluster:
+  base-url: https://${C8_CLUSTER_REGION}.zeebe.camunda.io/${C8_CLUSTER_ID}/v2/
