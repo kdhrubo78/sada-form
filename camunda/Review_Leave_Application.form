@@ -1,0 +1,50 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.7.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "a049c9e"
+  },
+  "schemaVersion": 19,
+  "id": "reviewLeaveApplicationForm",
+  "components": [
+    {
+      "label": "Name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_02mospg",
+        "columns": null
+      },
+      "id": "Field_12qlgx6",
+      "key": "name",
+      "description": "Leave Applicant Name",
+      "readonly": true
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Start Date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_1ohz6oi",
+        "columns": null
+      },
+      "id": "Field_06wryop",
+      "key": "start",
+      "description": "Leave Start date",
+      "readonly": true
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "End Date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_1ognggd",
+        "columns": null
+      },
+      "id": "Field_1dsz23o",
+      "key": "end",
+      "description": "Leave End Date"
+    }
+  ],
+  "type": "default"
+}
